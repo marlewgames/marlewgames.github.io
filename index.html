@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ironveil: Last Grid — MarLew Games</title>
+<meta name="description" content="Ironveil: Last Grid — a tower defense game by MarLew Games. Free beta for Android and Windows.">
+<meta property="og:title" content="Ironveil: Last Grid — beta">
+<meta property="og:description" content="Hold the line. Buy humanity the time to cure itself. Free beta for Android and Windows.">
+<meta property="og:image" content="https://marlewgames.github.io/img/og.jpg">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<style>
+:root {
+  --bg: #0b1114;
+  --panel: #121c21;
+  --line: #22323a;
+  --text: #e9eeec;
+  --muted: #9fb0b4;
+  --teal: #5dcaa5;
+  --teal-deep: #0f6e56;
+  --amber: #e8a33a;
+  --warn: #f59e5c;
+  --radius: 14px;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+html[data-lang="en"] [lang="pl"], html[data-lang="pl"] [lang="en"] { display: none !important; }
+a { color: var(--teal); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+header.top { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+.studio { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .04em; text-decoration: none; color: var(--text); }
+.studio svg { width: 30px; height: 30px; }
+.studio small { display: block; font-weight: 400; color: var(--muted); letter-spacing: .12em; font-size: 11px; text-transform: uppercase; }
+.langs { display: flex; gap: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.langs button { background: none; border: 0; color: var(--muted); font: inherit; font-size: 14px; padding: 4px 12px; border-radius: 999px; cursor: pointer; }
+.langs button[aria-pressed="true"] { background: var(--teal-deep); color: #fff; }
+
+.hero {
+  position: relative; overflow: hidden; border-radius: 22px; border: 1px solid var(--line);
+  background: #0b1114 url("img/hero.jpg") center / cover no-repeat;
+  min-height: 520px; display: flex; align-items: flex-end;
+}
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,13,15,.94) 0%, rgba(8,13,15,.75) 45%, rgba(8,13,15,.1) 100%); }
+.hero-body { position: relative; padding: 48px; max-width: 640px; }
+.badge { display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #1a1205; background: var(--amber); border-radius: 999px; padding: 3px 12px; }
+h1 { font-size: clamp(42px, 8vw, 76px); line-height: 1; margin: 16px 0 4px; letter-spacing: .02em; }
+.sub { color: var(--teal); font-size: clamp(22px, 4vw, 32px); font-weight: 600; letter-spacing: .12em; margin: 0 0 14px; }
+.tagline { color: var(--muted); font-size: 19px; margin: 0 0 26px; }
+
+.dl { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: #fff;
+  background: var(--teal-deep); border: 1px solid #1d8d70; border-radius: var(--radius); padding: 12px 20px;
+  transition: transform .12s, background .12s;
+}
+.btn:hover { background: #12805f; transform: translateY(-1px); }
+.btn.alt { background: #1b272d; border-color: var(--line); }
+.btn.alt:hover { background: #22323a; }
+.btn svg { width: 26px; height: 26px; flex: none; }
+.btn b { display: block; font-size: 17px; }
+.btn span { display: block; font-size: 13px; color: rgba(255,255,255,.7); }
+
+.note {
+  margin: 22px 0 0; display: flex; gap: 12px; align-items: flex-start;
+  background: rgba(232,163,58,.1); border: 1px solid rgba(232,163,58,.35); border-radius: var(--radius); padding: 12px 16px; font-size: 15px;
+}
+.note svg { width: 20px; height: 20px; flex: none; margin-top: 3px; color: var(--amber); }
+
+section { padding: 56px 0 8px; }
+h2 { font-size: 30px; margin: 0 0 18px; }
+.lead { color: var(--muted); max-width: 720px; margin: 0 0 26px; }
+
+.shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.shots a { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16 / 9; background: var(--panel); }
+.shots img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+.shots a:hover img { transform: scale(1.03); }
+
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.card .ico { width: 34px; height: 34px; color: var(--teal); margin-bottom: 10px; }
+
+.install { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.install ol { margin: 0; padding-left: 20px; color: var(--muted); font-size: 15px; }
+.install li { margin: 6px 0; }
+.install li strong { color: var(--text); }
+.req { margin-top: 12px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; }
+
+.sum { font: 12px/1.5 ui-monospace, Consolas, monospace; color: var(--muted); word-break: break-all; }
+footer { margin: 64px 0 0; padding: 26px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+footer p { margin: 4px 0; }
+
+@media (max-width: 800px) {
+  .hero { min-height: 0; background-size: 220% auto; background-position: 70% top; }
+  .hero::before { background: linear-gradient(0deg, rgba(8,13,15,1) 0%, rgba(8,13,15,.97) 62%, rgba(8,13,15,0) 82%); }
+  .hero-body { padding: 52vw 20px 24px; }
+  .features, .install, .shots { grid-template-columns: 1fr; }
+  .btn { flex: 1 1 100%; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="studio" href="./">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><polygon points="16,2 29,9.5 29,22.5 16,30 3,22.5 3,9.5" fill="none" stroke="#5dcaa5" stroke-width="2"/><path d="M9 22V11l7 7 7-7v11" fill="none" stroke="#e8a33a" stroke-width="2.4" stroke-linejoin="round"/></svg>
+      <span>MarLew Games<small>Indie games</small></span>
+    </a>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="pl" aria-pressed="false">PL</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-body">
+      <span class="badge"><span lang="en">Open beta 0.11.3</span><span lang="pl">Otwarta beta 0.11.3</span></span>
+      <h1>IRONVEIL</h1>
+      <p class="sub">LAST GRID</p>
+      <p class="tagline">
+        <span lang="en">Hold the line. Buy humanity the time to cure itself.</span>
+        <span lang="pl">Utrzymaj linię. Daj ludzkości czas, by znalazła lek.</span>
+      </p>
+      <div class="dl">
+        <a class="btn" href="https://github.com/marlewgames/marlewgames.github.io/releases/download/v0.11.3/ironveil-0.11.3-beta.apk" download>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+          <div><b lang="en">Download for Android</b><b lang="pl">Pobierz na Androida</b><span>APK · 163 MB</span></div>
+        </a>
+        <a class="btn alt" href="https://github.com/marlewgames/marlewgames.github.io/releases/download/v0.11.3/ironveil-0.11.3-beta-windows.zip" download>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.1l7.4-1v7.2H3zm8.3-1.2L21 2.5v8.8h-9.7zM3 12.2h7.4v7.2L3 18.4zm8.3 0H21V21l-9.7-1.4z"/></svg>
+          <div><b lang="en">Download for Windows</b><b lang="pl">Pobierz na Windows</b><span>ZIP · 172 MB</span></div>
+        </a>
+      </div>
+      <p class="note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>
+          <span lang="en">This beta works for <strong>7 days</strong> from the first launch. After that, download the new version here. Your progress is kept.</span>
+          <span lang="pl">Ta beta działa <strong>7 dni</strong> od pierwszego uruchomienia. Potem pobierz tutaj nową wersję. Twoje postępy zostaną zachowane.</span>
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <h2><span lang="en">The game</span><span lang="pl">O grze</span></h2>
+    <p class="lead">
+      <span lang="en">A rogue medical AI released the Veil, a toxic plague that turns people into mutants. You defend the last clean outposts, where the cure is being made. Build towers along the roads, upgrade them, and hold out wave after wave.</span>
+      <span lang="pl">Zbuntowana medyczna AI wypuściła Zasłonę, toksyczną zarazę, która zmienia ludzi w mutanty. Bronisz ostatnich czystych placówek, w których powstaje lek. Stawiaj wieże przy drogach, ulepszaj je i odpieraj fale za falami.</span>
+    </p>
+    <div class="shots">
+      <a href="img/shot1.jpg" target="_blank"><img src="img/shot1.jpg" alt="A battle on the Blackwater map" loading="lazy"></a>
+      <a href="img/shot2.jpg" target="_blank"><img src="img/shot2.jpg" alt="The tower panel with its upgrade paths" loading="lazy"></a>
+      <a href="img/shot3.jpg" target="_blank"><img src="img/shot3.jpg" alt="A Forward Outpost being claimed" loading="lazy"></a>
+      <a href="img/shot4.jpg" target="_blank"><img src="img/shot4.jpg" alt="The campaign map" loading="lazy"></a>
+    </div>
+  </section>
+
+  <section>
+    <div class="features">
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 4.5v11L12 22l-8-4.5v-11z"/><path d="M12 8v8M8 12h8"/></svg>
+        <h3 lang="en">Cure, don't just kill</h3><h3 lang="pl">Lecz, nie tylko niszcz</h3>
+        <p lang="en">Cured mutants build a Forward Outpost. When it stands, the map opens up, with new roads and new threats.</p>
+        <p lang="pl">Wyleczeni mutanci budują wysuniętą placówkę. Gdy stanie, mapa się powiększa, a z nią przychodzą nowe drogi i nowe zagrożenia.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V10l4-3v13M10 20V4l4 3v13M16 20v-8l4-2v10"/></svg>
+        <h3 lang="en">Towers with choices</h3><h3 lang="pl">Wieże z wyborem</h3>
+        <p lang="en">Twelve towers and four traps to upgrade, with a choice of path along the way. Link them, overcharge them, and reshape the enemy road between waves.</p>
+        <p lang="pl">Dwanaście wież i cztery pułapki do ulepszania, a po drodze wybór ścieżki rozwoju. Łącz je, przeładowuj, a między falami przebudowuj drogę wroga.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>
+        <h3 lang="en">No ads, no account</h3><h3 lang="pl">Bez reklam i kont</h3>
+        <p lang="en">Plays offline and collects no data. Ten languages, including English and Polish, with a narrated story intro and story films between missions.</p>
+        <p lang="pl">Działa bez internetu i nie zbiera żadnych danych. Dziesięć języków, w tym polski i angielski, oraz intro i filmy fabularne z lektorem.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span lang="en">How to install</span><span lang="pl">Jak zainstalować</span></h2>
+    <div class="install">
+      <div class="card">
+        <h3 lang="en">Android</h3><h3 lang="pl">Android</h3>
+        <ol lang="en">
+          <li>Tap <strong>Download for Android</strong> on your phone.</li>
+          <li>Open the downloaded file. If Android asks, allow installs from your browser (<strong>Settings → Allow from this source</strong>).</li>
+          <li>Play Protect may say the app is unknown. Tap <strong>More details → Install anyway</strong>.</li>
+          <li>Hold the phone sideways and have fun.</li>
+        </ol>
+        <ol lang="pl">
+          <li>Na telefonie stuknij <strong>Pobierz na Androida</strong>.</li>
+          <li>Otwórz pobrany plik. Jeśli Android zapyta, zezwól przeglądarce na instalację (<strong>Ustawienia → Zezwalaj z tego źródła</strong>).</li>
+          <li>Play Protect może napisać, że aplikacja jest nieznana. Stuknij <strong>Więcej szczegółów → Zainstaluj mimo to</strong>.</li>
+          <li>Obróć telefon poziomo i graj.</li>
+        </ol>
+        <p class="req" lang="en">Android 7 or newer, 64-bit phone. A new beta installs over the old one and keeps your progress.</p>
+        <p class="req" lang="pl">Android 7 lub nowszy, telefon 64-bitowy. Nowa beta instaluje się na starą i zachowuje postępy.</p>
+      </div>
+      <div class="card">
+        <h3 lang="en">Windows</h3><h3 lang="pl">Windows</h3>
+        <ol lang="en">
+          <li>Download the ZIP and <strong>extract it</strong> (right-click → Extract All).</li>
+          <li>Run <strong>Ironveil.exe</strong>.</li>
+          <li>If Windows shows "Windows protected your PC", click <strong>More info → Run anyway</strong>. The game is new and not code-signed yet.</li>
+          <li>Mouse: drag towers onto the map, wheel to zoom.</li>
+        </ol>
+        <ol lang="pl">
+          <li>Pobierz plik ZIP i <strong>rozpakuj go</strong> (prawy przycisk → Wyodrębnij wszystkie).</li>
+          <li>Uruchom <strong>Ironveil.exe</strong>.</li>
+          <li>Jeśli Windows pokaże „System Windows ochronił ten komputer”, kliknij <strong>Więcej informacji → Uruchom mimo to</strong>. Gra jest nowa i nie ma jeszcze podpisu cyfrowego.</li>
+          <li>Myszka: przeciągaj wieże na mapę, kółkiem przybliżaj.</li>
+        </ol>
+        <p class="req" lang="en">Windows 10 or 11, 64-bit, a graphics card with Vulkan or DirectX 12.</p>
+        <p class="req" lang="pl">Windows 10 lub 11, 64-bit, karta graficzna z Vulkanem lub DirectX 12.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 MarLew Games · Ironveil: Last Grid 0.11.3 · 2026-11-07</p>
+    <p lang="en">The game collects no personal data, shows no ads and needs no internet connection. This page uses no cookies or trackers.</p>
+    <p lang="pl">Gra nie zbiera danych osobowych, nie wyświetla reklam i nie potrzebuje internetu. Ta strona nie używa ciasteczek ani narzędzi śledzących.</p>
+    <p class="sum">SHA-256 · ironveil-0.11.3-beta.apk: ed4e560fdd760b4d9e603e9f4a0e6ec87c7ae9e040011b4577223ddff38eb713<br>SHA-256 · ironveil-0.11.3-beta-windows.zip: 13c0726e0acdedcb4d8c245f124c928313aac394f34fd7178dcd52e147600400</p>
+  </footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  function set(lang) {
+    root.dataset.lang = lang;
+    root.lang = lang;
+    document.querySelectorAll(".langs button").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.set === lang));
+    });
+  }
+  var saved = null;
+  try { saved = localStorage.getItem("lang"); } catch (e) {}
+  set(saved || ((navigator.language || "").toLowerCase().indexOf("pl") === 0 ? "pl" : "en"));
+  document.querySelectorAll(".langs button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      set(b.dataset.set);
+      try { localStorage.setItem("lang", b.dataset.set); } catch (e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>
