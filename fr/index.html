@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="DlYMwAlo2bnsmHW1K1eCa6zPJb4UEwASR_f4JjMaytQ">
+
+<title>Ironveil: Last Grid – jeu de tower defense pour Android | MarLew Games</title>
+<meta name="description" content="Jeu gratuit de tower defense (défense de tours) pour Android. Construisez et améliorez 12 tours, stoppez les vagues de mutants et soignez les infectés. Campagne, mode Sans fin, hors ligne.">
+<link rel="canonical" href="https://marlewgames.github.io/fr/">
+<link rel="alternate" hreflang="en" href="https://marlewgames.github.io/">
+<link rel="alternate" hreflang="pl" href="https://marlewgames.github.io/pl/">
+<link rel="alternate" hreflang="es" href="https://marlewgames.github.io/es/">
+<link rel="alternate" hreflang="fr" href="https://marlewgames.github.io/fr/">
+<link rel="alternate" hreflang="de" href="https://marlewgames.github.io/de/">
+<link rel="alternate" hreflang="it" href="https://marlewgames.github.io/it/">
+<link rel="alternate" hreflang="pt" href="https://marlewgames.github.io/pt/">
+<link rel="alternate" hreflang="ru" href="https://marlewgames.github.io/ru/">
+<link rel="alternate" hreflang="tr" href="https://marlewgames.github.io/tr/">
+<link rel="alternate" hreflang="uk" href="https://marlewgames.github.io/uk/">
+<link rel="alternate" hreflang="x-default" href="https://marlewgames.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MarLew Games">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marlewgames.github.io/fr/">
+<meta property="og:title" content="Ironveil: Last Grid – jeu de tower defense pour Android | MarLew Games">
+<meta property="og:description" content="Jeu gratuit de tower defense (défense de tours) pour Android. Construisez et améliorez 12 tours, stoppez les vagues de mutants et soignez les infectés. Campagne, mode Sans fin, hors ligne.">
+<meta property="og:image" content="https://marlewgames.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1114">
+<link rel="icon" href="../img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../img/app-icon-192.png">
+<link rel="preload" as="image" href="../img/hero.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://marlewgames.github.io/#studio","name":"MarLew Games","url":"https://marlewgames.github.io/","logo":"https://marlewgames.github.io/img/app-icon.png","email":"info.marlewgames@gmail.com"},{"@type":"VideoGame","@id":"https://marlewgames.github.io/#game","name":"Ironveil: Last Grid","alternateName":"Ironveil","url":"https://marlewgames.github.io/fr/","description":"Jeu gratuit de tower defense (défense de tours) pour Android. Construisez et améliorez 12 tours, stoppez les vagues de mutants et soignez les infectés. Campagne, mode Sans fin, hors ligne.","image":"https://marlewgames.github.io/img/og.jpg","screenshot":["https://marlewgames.github.io/img/shots/battle.jpg","https://marlewgames.github.io/img/shots/haven.jpg","https://marlewgames.github.io/img/shots/blackwater.jpg","https://marlewgames.github.io/img/shots/floodgate.jpg","https://marlewgames.github.io/img/shots/towers.jpg","https://marlewgames.github.io/img/shots/mutants.jpg","https://marlewgames.github.io/img/shots/research.jpg","https://marlewgames.github.io/img/shots/missions.jpg","https://marlewgames.github.io/img/shots/title.jpg"],"genre":["Tower defense","Strategy"],"applicationCategory":"GameApplication","gamePlatform":"Android","operatingSystem":"Android 7.0 or newer","playMode":"SinglePlayer","author":{"@id":"https://marlewgames.github.io/#studio"},"publisher":{"@id":"https://marlewgames.github.io/#studio"},"inLanguage":["en","pl","es","fr","de","it","pt","ru","tr","uk"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://marlewgames.github.io/fr/#beta"}},{"@type":"VideoObject","name":"Ironveil: Last Grid – bande-annonce de l'Acte III","description":"Jeu gratuit de tower defense (défense de tours) pour Android. Construisez et améliorez 12 tours, stoppez les vagues de mutants et soignez les infectés. Campagne, mode Sans fin, hors ligne.","thumbnailUrl":"https://marlewgames.github.io/media/teaser3.jpg","contentUrl":"https://marlewgames.github.io/media/teaser3_fr.mp4","uploadDate":"2026-11-07","duration":"PT30S","inLanguage":"en"},{"@type":"VideoObject","name":"Ironveil: Last Grid – film d'introduction","description":"Jeu gratuit de tower defense (défense de tours) pour Android. Construisez et améliorez 12 tours, stoppez les vagues de mutants et soignez les infectés. Campagne, mode Sans fin, hors ligne.","thumbnailUrl":"https://marlewgames.github.io/media/intro.jpg","contentUrl":"https://marlewgames.github.io/media/intro_en.mp4","uploadDate":"2026-11-07","duration":"PT1M26S","inLanguage":"en"},{"@type":"VideoObject","name":"Ironveil: Last Grid – film de l'Acte IV","description":"Jeu gratuit de tower defense (défense de tours) pour Android. Construisez et améliorez 12 tours, stoppez les vagues de mutants et soignez les infectés. Campagne, mode Sans fin, hors ligne.","thumbnailUrl":"https://marlewgames.github.io/media/core.jpg","contentUrl":"https://marlewgames.github.io/media/core_en.mp4","uploadDate":"2026-11-07","duration":"PT25S","inLanguage":"en"}]}</script>
+<style>
+:root {
+  --bg: #0b1114;
+  --bg2: #0e171b;
+  --panel: #121c21;
+  --line: #22323a;
+  --text: #e9eeec;
+  --muted: #9fb0b4;
+  --teal: #5dcaa5;
+  --teal-deep: #0f6e56;
+  --amber: #e8a33a;
+  --radius: 14px;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--text); overflow-x: hidden;
+  font: 17px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--teal); }
+img, video { max-width: 100%; }
+.wrap { max-width: 1140px; margin: 0 auto; padding: 0 16px; }
+
+/* top bar */
+header.top { position: sticky; top: 0; z-index: 20; background: rgba(11,17,20,.86); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(34,50,58,.6); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 62px; }
+.studio { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .04em; text-decoration: none; color: var(--text); white-space: nowrap; }
+.studio svg { width: 28px; height: 28px; }
+.studio small { display: block; font-weight: 400; color: var(--muted); letter-spacing: .12em; font-size: 10px; text-transform: uppercase; line-height: 1.2; }
+nav.links { display: flex; gap: 22px; font-size: 15px; }
+nav.links a { color: var(--muted); text-decoration: none; }
+nav.links a:hover { color: var(--text); }
+details.langs { position: relative; flex: none; margin: 0; padding: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; }
+details.langs summary { list-style: none; cursor: pointer; font-size: 14px; font-weight: 600; padding: 5px 14px; white-space: nowrap; }
+details.langs summary::-webkit-details-marker { display: none; }
+.lang-list { position: absolute; right: 0; top: calc(100% + 6px); min-width: 150px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+.lang-list a { display: block; color: var(--text); text-decoration: none; font-size: 15px; padding: 6px 10px; border-radius: 8px; }
+.lang-list a:hover { background: #1b272d; }
+.lang-list a[aria-current="page"] { background: var(--teal-deep); color: #fff; }
+
+/* hero */
+.hero { position: relative; min-height: 640px; display: flex; align-items: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: #0b1114 url("../img/hero.jpg") center / cover no-repeat; }
+.hero-bg::after { content: ""; position: absolute; inset: 0; background:
+  linear-gradient(90deg, rgba(8,13,15,.96) 0%, rgba(8,13,15,.8) 42%, rgba(8,13,15,.15) 100%),
+  linear-gradient(0deg, var(--bg) 0%, rgba(11,17,20,0) 30%); }
+.hero .wrap { position: relative; width: 100%; padding-top: 56px; padding-bottom: 64px; }
+.hero-body { max-width: 620px; }
+.app-icon { width: 92px; height: 92px; border-radius: 22px; box-shadow: 0 8px 30px rgba(0,0,0,.55), 0 0 0 1px rgba(93,202,165,.25); display: block; }
+.kicker { display: inline-block; margin-top: 22px; font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); }
+h1 { font-size: clamp(48px, 9vw, 92px); line-height: .95; margin: 8px 0 2px; letter-spacing: .03em; font-weight: 800; text-shadow: 0 2px 24px rgba(0,0,0,.6); }
+.sub { display: block; text-shadow: none; line-height: 1.3; color: var(--amber); font-size: clamp(20px, 3.4vw, 30px); font-weight: 700; letter-spacing: .32em; margin: 6px 0 18px; }
+.hook { font-size: clamp(19px, 2.4vw, 23px); margin: 0 0 8px; }
+.tagline { color: var(--muted); font-size: 17px; margin: 0 0 26px; max-width: 540px; }
+
+.cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.play-badge {
+  display: inline-flex; align-items: center; gap: 12px; color: #fff; text-decoration: none;
+  background: #000; border: 1px solid #5c6a70; border-radius: 12px; padding: 9px 20px 9px 14px;
+}
+.play-badge svg { width: 30px; height: 30px; flex: none; }
+.play-badge small { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #c8d2d5; line-height: 1.2; }
+.play-badge b { display: block; font-size: 20px; line-height: 1.15; font-weight: 600; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; font-weight: 600; font-size: 16px;
+  background: var(--teal-deep); border: 1px solid #1d8d70; border-radius: 12px; padding: 13px 20px; transition: background .12s, transform .12s;
+}
+.btn:hover { background: #12805f; transform: translateY(-1px); }
+.btn.ghost { background: rgba(18,28,33,.7); border-color: var(--line); }
+.btn.ghost:hover { background: #1b272d; }
+.btn svg { width: 20px; height: 20px; flex: none; }
+
+.plan { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.plan div { background: rgba(18,28,33,.78); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; font-size: 14px; color: var(--muted); }
+.plan b { display: block; color: var(--text); font-size: 15px; }
+.plan .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--teal); margin-right: 6px; vertical-align: 1px; }
+.plan .dot.later { background: var(--amber); }
+
+/* sections */
+section { padding: 72px 0 8px; scroll-margin-top: 62px; }
+.eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); margin: 0 0 6px; }
+h2 { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 0 0 14px; }
+.lead { color: var(--muted); max-width: 720px; margin: 0 0 28px; }
+
+/* videos */
+.player { position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #000; aspect-ratio: 16 / 9; }
+.player video { width: 100%; height: 100%; display: block; object-fit: cover; background: #000; }
+.player .play { font: inherit; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border: 0; padding: 0; cursor: pointer; background: center / cover no-repeat; color: #fff; }
+.player .play::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.05) 55%); }
+.player .play i { position: relative; width: 78px; height: 78px; border-radius: 50%; background: rgba(15,110,86,.9); box-shadow: 0 0 0 8px rgba(93,202,165,.18); display: flex; align-items: center; justify-content: center; transition: transform .15s; }
+.player .play:hover i { transform: scale(1.07); }
+.player .play i svg { width: 30px; height: 30px; margin-left: 5px; }
+.player .play .label { position: absolute; left: 22px; bottom: 18px; text-align: left; font-size: 15px; color: #dfe7e5; }
+.player .play .label b { display: block; font-size: 22px; color: #fff; }
+.player.played .play { display: none; }
+.films { display: grid; grid-template-columns: 1.6fr 1fr; gap: 16px; align-items: start; }
+.films .side { display: grid; gap: 16px; }
+.caption { font-size: 14px; color: var(--muted); margin: 8px 2px 0; }
+.clips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 18px; }
+.clips .player { aspect-ratio: 9 / 16; }
+.clips .player .play i { width: 58px; height: 58px; }
+.clips .player .play i svg { width: 22px; height: 22px; margin-left: 4px; }
+.clips .player .play::before { background: none; }
+
+/* acts */
+.acts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.act { position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 3 / 4; background: var(--panel) center / cover no-repeat; display: flex; align-items: flex-end; }
+.act::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(8,13,15,.97) 0%, rgba(8,13,15,.55) 48%, rgba(8,13,15,.05) 100%); }
+.act div { position: relative; padding: 16px; }
+.act .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; border-radius: 999px; padding: 2px 10px; background: var(--teal-deep); color: #fff; }
+.act.later .tag { background: var(--amber); color: #1a1205; }
+.act h3 { margin: 8px 0 2px; font-size: 20px; letter-spacing: .04em; }
+.act p { margin: 0; font-size: 14px; color: var(--muted); }
+
+/* features */
+.features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.card .ico { width: 32px; height: 32px; color: var(--teal); margin-bottom: 10px; }
+.card.hl { border-color: rgba(232,163,58,.45); background: linear-gradient(180deg, rgba(232,163,58,.09), var(--panel) 70%); }
+.card.hl .ico { color: var(--amber); }
+
+/* screenshots */
+.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.shots a { display: block; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16 / 9; background: var(--panel); }
+.shots a.wide { grid-column: span 2; grid-row: span 2; }
+.shots img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+.shots a:hover img { transform: scale(1.03); }
+.lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(4,7,8,.94); display: none; align-items: center; justify-content: center; padding: 16px; cursor: zoom-out; }
+.lightbox.open { display: flex; }
+.lightbox img { max-height: 92vh; border-radius: 10px; }
+
+/* beta */
+.beta { display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; align-items: start; }
+.beta .card h3 { font-size: 20px; }
+.dl { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 10px; }
+.dl .btn span { font-weight: 400; font-size: 13px; color: rgba(255,255,255,.72); }
+.note { font-size: 14px; color: var(--muted); margin: 0; }
+details { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 12px; }
+details summary { cursor: pointer; font-weight: 600; }
+details ol { margin: 10px 0 0; padding-left: 20px; color: var(--muted); font-size: 15px; }
+details li { margin: 5px 0; }
+details li strong { color: var(--text); }
+.req { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
+
+/* press */
+.press { display: grid; grid-template-columns: 1fr 1.4fr; gap: 16px; }
+.facts { width: 100%; border-collapse: collapse; font-size: 15px; }
+.facts th, .facts td { text-align: left; padding: 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.facts th { color: var(--muted); font-weight: 400; width: 40%; padding-right: 12px; }
+.press-icon { display: flex; gap: 16px; align-items: center; margin-bottom: 14px; }
+.press-icon img { width: 84px; height: 84px; border-radius: 18px; }
+.press .card p + p { margin-top: 10px; }
+
+footer { margin: 80px 0 0; padding: 28px 0 44px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; background: var(--bg2); }
+footer p { margin: 4px 0; }
+footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px; }
+.sum { font: 12px/1.5 ui-monospace, Consolas, monospace; word-break: break-all; opacity: .8; }
+
+@media (max-width: 960px) {
+  nav.links { display: none; }
+  .films { grid-template-columns: 1fr; }
+  .films .side { grid-template-columns: 1fr 1fr; }
+  .features { grid-template-columns: repeat(2, 1fr); }
+  .acts { grid-template-columns: repeat(2, 1fr); }
+  .beta, .press { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .hero { min-height: 0; align-items: flex-end; }
+  .hero-bg { background-size: auto 62vw; background-position: 62% top; background-color: var(--bg); }
+  .hero-bg::after { background: linear-gradient(0deg, var(--bg) 0%, var(--bg) calc(100% - 62vw), rgba(11,17,20,.2) calc(100% - 22vw), rgba(11,17,20,.35) 100%); }
+  .hero .wrap { padding-top: 34vw; padding-bottom: 40px; }
+  .app-icon { width: 72px; height: 72px; border-radius: 17px; }
+  .cta > * { flex: 1 1 100%; justify-content: center; }
+  .plan div { flex: 1 1 0; min-width: 0; }
+  .films .side { grid-template-columns: 1fr; }
+  .clips { grid-template-columns: repeat(2, 1fr); }
+  .features { grid-template-columns: 1fr; }
+  .shots { grid-template-columns: 1fr 1fr; }
+  .shots a.wide { grid-column: span 2; grid-row: auto; }
+  .act { aspect-ratio: 4 / 5; }
+  .act h3 { font-size: 17px; }
+  .player .play span { left: 14px; bottom: 12px; font-size: 13px; }
+  .player .play .label b { font-size: 18px; }
+  section { padding-top: 56px; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="studio" href="./">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><polygon points="16,2 29,9.5 29,22.5 16,30 3,22.5 3,9.5" fill="none" stroke="#5dcaa5" stroke-width="2"/><path d="M9 22V11l7 7 7-7v11" fill="none" stroke="#e8a33a" stroke-width="2.4" stroke-linejoin="round"/></svg>
+      <span>MarLew Games<small>Indie games</small></span>
+    </a>
+    <nav class="links">
+      <a href="#teasers"><span lang="fr">Bandes-annonces</span></a>
+      <a href="#acts"><span lang="fr">Histoire</span></a>
+      <a href="#features"><span lang="fr">Points forts</span></a>
+      <a href="#screens"><span lang="fr">Captures</span></a>
+      <a href="#beta">Beta</a>
+      <a href="#press"><span lang="fr">Presse</span></a>
+    </nav>
+    <details class="langs"><summary aria-label="Language">FR <span aria-hidden="true">▾</span></summary><div class="lang-list"><a href="../" hreflang="en" lang="en" data-set="en">English</a><a href="../pl/" hreflang="pl" lang="pl" data-set="pl">Polski</a><a href="../es/" hreflang="es" lang="es" data-set="es">Español</a><a href="./" hreflang="fr" lang="fr" data-set="fr" aria-current="page">Français</a><a href="../de/" hreflang="de" lang="de" data-set="de">Deutsch</a><a href="../it/" hreflang="it" lang="it" data-set="it">Italiano</a><a href="../pt/" hreflang="pt" lang="pt" data-set="pt">Português</a><a href="../ru/" hreflang="ru" lang="ru" data-set="ru">Русский</a><a href="../tr/" hreflang="tr" lang="tr" data-set="tr">Türkçe</a><a href="../uk/" hreflang="uk" lang="uk" data-set="uk">Українська</a></div></details>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-bg" role="img" aria-label="Haven Dock at night, under the green Veil"></div>
+  <div class="wrap">
+    <div class="hero-body">
+      <img class="app-icon" src="../img/app-icon-192.png" alt="Ironveil: Last Grid app icon" width="92" height="92">
+      <span class="kicker"><span lang="fr">Jeu de tower defense pour Android</span></span>
+      <h1>IRONVEIL <span class="sub">LAST GRID</span></h1>
+      <p class="hook">
+        <span lang="fr">Tenez la ligne. Offrez à l'humanité le temps de se soigner.</span>
+        
+      </p>
+      <p class="tagline">
+        <span lang="fr">Une IA médicale devenue folle a transformé le monde en mutants. Vous gardez les derniers postes sains, où le remède est fabriqué, et certains monstres peuvent encore être sauvés.</span>
+        
+      </p>
+      <div class="cta">
+        <span class="play-badge" title="The Google Play listing is on its way">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.2 2.6c-.3.3-.4.7-.4 1.2v16.4c0 .5.1.9.4 1.2l9.3-9.4z" fill="#5dcaa5"/><path d="M16.6 15.1l-3.1-3.1-9.3 9.4c.4.4 1 .4 1.7 0z" fill="#e8a33a"/><path d="M16.6 8.9L5.9 2.6c-.7-.4-1.3-.3-1.7 0l9.3 9.4z" fill="#8fe0c4"/><path d="M20.3 11l-3.7-2.1-3.1 3.1 3.1 3.1 3.7-2.1c1-.6 1-1.5 0-2z" fill="#f4c56d"/></svg>
+          <span><small lang="fr">Bientôt sur</small><b>Google Play</b></span>
+        </span>
+        <a class="btn ghost" href="#teasers">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+          <span lang="fr">Voir la bande-annonce</span>
+        </a>
+      </div>
+      <div class="plan">
+        <div><span class="dot"></span><b lang="fr">Début décembre</b>
+          <span lang="fr">Sortie sur Google Play · Actes I et II</span></div>
+        <div><span class="dot later"></span><b lang="fr">Vers Noël</b>
+          <span lang="fr">Actes III et IV · mise à jour gratuite</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section id="teasers">
+    <p class="eyebrow"><span lang="fr">Bandes-annonces</span></p>
+    <h2><span lang="fr">Voyez-le en action</span></h2>
+    <div class="films">
+      <div>
+        <div class="player" data-video="../media/teaser3" data-all>
+          <button class="play" type="button" style="background-image:url(../media/teaser3.jpg)" aria-label="Play the Act III teaser">
+            <i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i>
+            <span class="label"><b lang="fr">Acte III : La Moisson</b><span lang="fr">Bande-annonce · 30 s · mise à jour gratuite vers Noël</span></span>
+          </button>
+        </div>
+        <p class="caption"><span lang="fr">MERIDIAN cesse de tuer et commence à construire. Spine Works, la ville-usine qui fabrique le remède, est la prochaine cible.</span></p>
+      </div>
+      <div class="side">
+        <div>
+          <div class="player" data-video="../media/intro">
+            <button class="play" type="button" style="background-image:url(../media/intro.jpg)" aria-label="Play the intro film">
+              <i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i>
+              <span class="label"><b lang="fr">Le film d'introduction</b><span lang="fr">Les débuts du Voile · 1:26</span></span>
+            </button>
+          </div>
+          <p class="caption"><span lang="fr">Voix en anglais et en polonais, sous-titres en dix langues dans le jeu.</span></p>
+        </div>
+        <div>
+          <div class="player" data-video="../media/core">
+            <button class="play" type="button" style="background-image:url(../media/core.jpg)" aria-label="Play the Act IV film">
+              <i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i>
+              <span class="label"><b lang="fr">Acte IV : L'Aube</b><span lang="fr">La route vers Ironveil Core · 0:25</span></span>
+            </button>
+          </div>
+          <p class="caption"><span lang="fr">Le final, qui arrive avec l'Acte III vers Noël.</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="clips">
+      <div class="player" data-video="../media/clip_gorgemaw"><button class="play" type="button" style="background-image:url(../media/clip_gorgemaw.jpg)" aria-label="Play clip: the Act I boss"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i></button></div>
+      <div class="player" data-video="../media/clip_tesla"><button class="play" type="button" style="background-image:url(../media/clip_tesla.jpg)" aria-label="Play clip: Tesla coils"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i></button></div>
+      <div class="player" data-video="../media/clip_outpost"><button class="play" type="button" style="background-image:url(../media/clip_outpost.jpg)" aria-label="Play clip: the map grows"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i></button></div>
+      <div class="player" data-video="../media/clip_endless"><button class="play" type="button" style="background-image:url(../media/clip_endless.jpg)" aria-label="Play clip: Endless mode"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i></button></div>
+    </div>
+    <p class="caption"><span lang="fr">Séquences de jeu enregistrées dans le jeu.</span></p>
+  </section>
+
+  <section id="acts">
+    <p class="eyebrow"><span lang="fr">La campagne</span></p>
+    <h2><span lang="fr">Quatre postes. Un remède.</span></h2>
+    <p class="lead">
+      <span lang="fr">Chaque poste fabrique une partie du Projet Aube, et chaque avancée pousse MERIDIAN à frapper plus fort : d'abord avec des mutants, puis avec des mutants équipés de ses machines. Des films et des émissions radio racontent l'histoire entre les missions, et la fin dépend de vous.</span>
+      
+    </p>
+    <div class="acts">
+      <div class="act" style="background-image:url(../img/act1.jpg)"><div><span class="tag" lang="fr">À la sortie</span><h3 lang="fr">I · Quarantaine</h3><p>Haven Dock</p></div></div>
+      <div class="act" style="background-image:url(../img/act2.jpg)"><div><span class="tag" lang="fr">À la sortie</span><h3>II · Blackwater</h3><p>Blackwater Station</p></div></div>
+      <div class="act later" style="background-image:url(../img/act3.jpg)"><div><span class="tag" lang="fr">À Noël</span><h3 lang="fr">III · La Moisson</h3><p>Spine Works</p></div></div>
+      <div class="act later" style="background-image:url(../img/act4.jpg)"><div><span class="tag" lang="fr">À Noël</span><h3 lang="fr">IV · L'Aube</h3><p>Ironveil Core</p></div></div>
+    </div>
+  </section>
+
+  <section id="features">
+    <p class="eyebrow"><span lang="fr">Points forts</span></p>
+    <h2><span lang="fr">Un jeu de défense de tours facile à prendre en main et difficile à maîtriser</span></h2>
+    <p class="lead">
+      <span lang="fr">Ironveil: Last Grid est un jeu gratuit de tower defense (défense de tours) en 3D pour Android, avec une vraie campagne. Placez des tours le long de la route, améliorez-les, arrêtez chaque vague de mutants avant qu'elle n'atteigne votre poste, et jouez hors ligne.</span>
+      
+    </p>
+    <div class="features">
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V10l4-3v13M10 20V4l4 3v13M16 20v-8l4-2v10"/></svg>
+        <h3 lang="fr">12 tours, 4 pièges</h3>
+        <p lang="fr">Cinq niveaux d'amélioration avec choix de voie. Reliez vos tours par des relais, surchargez-les et modifiez la route ennemie entre les vagues.</p>
+        
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6c0 2.2 1.2 3.6 2 4.5V17h8v-3.5c.8-.9 2-2.3 2-4.5a6 6 0 0 0-6-6z"/><path d="M9 21h6M10 10h.01M14 10h.01"/></svg>
+        <h3 lang="fr">Des mutants qui évoluent</h3>
+        <p lang="fr">Essaims, brutes, porteurs de spores, créatures volantes et boss gigantesques. Plus tard, ils arrivent blindés de machines : il vous faudra le bon type de dégâts.</p>
+        
+      </div>
+      <div class="card hl">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 4.5v11L12 22l-8-4.5v-11z"/><path d="M12 8v8M8 12h8"/></svg>
+        <h3 lang="fr">Soignez, ne tuez pas seulement</h3>
+        <p lang="fr">Les mutants soignés bâtissent un Poste Avancé. Une fois debout, la caméra recule, la carte s'agrandit et de nouvelles routes s'ouvrent.</p>
+        
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 18h3V12H4zM10.5 18h3V8h-3zM17 18h3V4h-3z"/></svg>
+        <h3 lang="fr">Quatre difficultés</h3>
+        <p lang="fr">Facile, Normale, Difficile et Hardcore. Profitez tranquillement de l'histoire ou visez trois étoiles sur chaque carte.</p>
+        
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 8c-3 0-4 2-4 4s1 4 4 4c4 0 6-8 10-8 3 0 4 2 4 4s-1 4-4 4c-4 0-6-8-10-8z"/></svg>
+        <h3 lang="fr">Mode Sans fin</h3>
+        <p lang="fr">Combien de temps tiendrez-vous ? Les vagues grossissent jusqu'à ce que la ligne cède. Battez votre record.</p>
+        
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/><path d="M7.5 15h9"/></svg>
+        <h3 lang="fr">Recherche</h3>
+        <p lang="fr">Gagnez des crédits au combat et dépensez-les au laboratoire en améliorations permanentes valables dans toutes les missions.</p>
+        
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4.5-2.5z"/></svg>
+        <h3 lang="fr">Une histoire en films</h3>
+        <p lang="fr">Une introduction narrée, des films entre les actes, les émissions de MERIDIAN et deux fins. Dix langues.</p>
+        
+      </div>
+      <div class="card hl">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>
+        <h3 lang="fr">Honnête et hors ligne</h3>
+        <p lang="fr">Fonctionne sans internet ni compte. Gratuit, avec des pubs seulement si vous le voulez : regardez-en une pour un bonus, ou jamais.</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <p class="eyebrow"><span lang="fr">Captures</span></p>
+    <h2><span lang="fr">Du tower defense conçu pour votre téléphone</span></h2>
+    <div class="shots">
+      <a class="wide" href="../img/shots/battle.jpg"><img src="../img/shots/battle.jpg" alt="Bataille de tower defense : des tours tirent sur des mutants sur la carte Haven Dock" loading="lazy" width="1280" height="720"></a>
+      <a href="../img/shots/haven.jpg"><img src="../img/shots/haven.jpg" alt="Une bataille de l'Acte I avec l'écran de jeu complet" loading="lazy" width="1280" height="720"></a>
+      <a href="../img/shots/blackwater.jpg"><img src="../img/shots/blackwater.jpg" alt="La station inondée de Blackwater dans l'Acte II" loading="lazy" width="1280" height="720"></a>
+      <a href="../img/shots/floodgate.jpg"><img src="../img/shots/floodgate.jpg" alt="Une carte de fin d'Acte II avec des pièges sur la route" loading="lazy" width="1280" height="720"></a>
+      <a href="../img/shots/towers.jpg"><img src="../img/shots/towers.jpg" alt="La galerie des tours : le Nœud Relais" loading="lazy" width="1280" height="720"></a>
+      <a href="../img/shots/mutants.jpg"><img src="../img/shots/mutants.jpg" alt="La galerie des mutants : le Rookwing" loading="lazy" width="1280" height="720"></a>
+      <a href="../img/shots/research.jpg"><img src="../img/shots/research.jpg" alt="Recherche : améliorations permanentes" loading="lazy" width="1280" height="720"></a>
+      <a href="../img/shots/missions.jpg"><img src="../img/shots/missions.jpg" alt="Sélection des missions de l'Acte II" loading="lazy" width="1280" height="720"></a>
+      <a href="../img/shots/title.jpg"><img src="../img/shots/title.jpg" alt="L'écran titre" loading="lazy" width="1280" height="720"></a>
+    </div>
+  </section>
+
+  <section id="beta">
+    <p class="eyebrow"><span lang="fr">Impatient ?</span></p>
+    <h2><span lang="fr">Essayez la bêta gratuite</span></h2>
+    <div class="beta">
+      <div class="card">
+        <h3><span lang="fr">Bêta 0.11.3 pour Android et Windows</span></h3>
+        <p class="note">
+          <span lang="fr">Jouez avant la sortie sur Google Play et dites-nous ce que vous en pensez. La bêta fonctionne pendant <strong>7 jours</strong> après le premier lancement ; ensuite, téléchargez ici la nouvelle version. Votre progression est conservée.</span>
+          
+        </p>
+        <div class="dl">
+          <a class="btn" href="https://github.com/marlewgames/marlewgames.github.io/releases/download/v0.11.3/ironveil-0.11.3-beta.apk" download>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+            <span lang="fr">Android</span> <span>APK · 163 MB</span>
+          </a>
+          <a class="btn ghost" href="https://github.com/marlewgames/marlewgames.github.io/releases/download/v0.11.3/ironveil-0.11.3-beta-windows.zip" download>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.1l7.4-1v7.2H3zm8.3-1.2L21 2.5v8.8h-9.7zM3 12.2h7.4v7.2L3 18.4zm8.3 0H21V21l-9.7-1.4z"/></svg>
+            Windows <span>ZIP · 172 MB</span>
+          </a>
+        </div>
+        <p class="note"><span lang="fr">Avis et bugs :</span> <a href="mailto:info.marlewgames@gmail.com">info.marlewgames@gmail.com</a></p>
+      </div>
+      <div>
+        <details>
+          <summary><span lang="fr">Comment installer sur Android</span></summary>
+          <ol lang="fr"><li>Sur votre téléphone, touchez <strong>Android</strong> ci-dessus.</li> <li>Ouvrez le fichier téléchargé. Si Android le demande, autorisez les installations depuis votre navigateur (<strong>Paramètres → Autoriser cette source</strong>).</li> <li>Play Protect peut indiquer que l'appli est inconnue. Touchez <strong>Plus de détails → Installer quand même</strong>.</li> <li>Tournez le téléphone à l'horizontale et amusez-vous.</li></ol>
+          
+          <p class="req" lang="fr">Android 7 ou plus récent, téléphone 64 bits. Une nouvelle bêta s'installe par-dessus l'ancienne et conserve votre progression.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="fr">Comment installer sur Windows</span></summary>
+          <ol lang="fr"><li>Téléchargez le ZIP et <strong>extrayez-le</strong> (clic droit → Extraire tout).</li> <li>Lancez <strong>Ironveil.exe</strong>.</li> <li>Si Windows affiche « Windows a protégé votre ordinateur », cliquez sur <strong>Informations complémentaires → Exécuter quand même</strong>. Le jeu est récent et n'a pas encore de signature numérique.</li> <li>Souris : faites glisser les tours sur la carte, molette pour zoomer.</li></ol>
+          
+          <p class="req" lang="fr">Windows 10 ou 11, 64 bits, carte graphique compatible Vulkan ou DirectX 12.</p>
+          
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <p class="eyebrow">FAQ</p>
+    <h2><span lang="fr">Questions sur le jeu</span></h2>
+    <div>
+        <details>
+          <summary><span lang="fr">Ironveil: Last Grid est-il gratuit ?</span></summary>
+          <p class="req" lang="fr">Oui. Le jeu est gratuit à télécharger et à jouer. Certains boutons facultatifs permettent de regarder une courte pub contre un bonus, mais rien n'est imposé et vous pouvez finir tout le jeu sans en voir une seule.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="fr">Peut-on jouer à ce tower defense hors ligne ?</span></summary>
+          <p class="req" lang="fr">Oui. Il ne demande ni compte ni connexion internet. La connexion ne sert que si vous choisissez de regarder une pub facultative.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="fr">Quand sort-il sur Google Play ?</span></summary>
+          <p class="req" lang="fr">Début décembre 2026 avec les Actes I et II. Les Actes III et IV suivront en mise à jour gratuite vers Noël. Vous pouvez déjà essayer la bêta gratuite.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="fr">Sur quels appareils fonctionne-t-il ?</span></summary>
+          <p class="req" lang="fr">Android 7 ou plus récent, sur téléphone 64 bits. La bêta fonctionne aussi sur Windows 10 et 11 en 64 bits. Il n'y a pas de version iPhone pour le moment.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="fr">Qu'est-ce qui le distingue des autres jeux de tower defense ?</span></summary>
+          <p class="req" lang="fr">Certains mutants peuvent être soignés au lieu d'être tués. Les soignés bâtissent un Poste Avancé, la caméra recule et la carte s'agrandit en pleine bataille, avec de nouvelles routes à défendre. Vous pouvez aussi modifier la route ennemie entre les vagues.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="fr">À partir de quel âge ?</span></summary>
+          <p class="req" lang="fr">Il s'adresse aux joueurs de 13 ans et plus : il y a des mutants, des combats et une histoire sombre.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="fr">Quelles langues sont disponibles ?</span></summary>
+          <p class="req" lang="fr">Le jeu existe en dix langues, avec des voix en anglais et en polonais et des sous-titres de films dans les dix. Une partie du texte des missions est encore en cours de traduction avant la sortie.</p>
+          
+        </details>
+    </div>
+  </section>
+
+  <section id="press">
+    <p class="eyebrow"><span lang="fr">Dossier de presse</span></p>
+    <h2><span lang="fr">Vous écrivez sur le jeu ?</span></h2>
+    <div class="press">
+      <div class="card">
+        <div class="press-icon">
+          <img src="../img/app-icon-192.png" alt="Ironveil: Last Grid app icon" width="84" height="84" loading="lazy">
+          <div><b>Ironveil: Last Grid</b><br><span class="note">MarLew Games</span></div>
+        </div>
+        <table class="facts">
+          <tr><th lang="fr">Développeur</th><td>MarLew Games</td></tr>
+          <tr><th lang="fr">Genre</th><td lang="fr">Tower defense narratif</td></tr>
+          <tr><th lang="fr">Plateforme</th><td>Android (Google Play)</td></tr>
+          <tr><th lang="fr">Sortie</th><td lang="fr">Début décembre 2026 (Actes I–II) ; Actes III–IV vers Noël</td></tr>
+          <tr><th lang="fr">Prix</th><td lang="fr">Gratuit, pubs récompensées facultatives</td></tr>
+          <tr><th lang="fr">Langues</th><td lang="fr">10 (voix : anglais, polonais)</td></tr>
+          <tr><th lang="fr">Contact</th><td><a href="mailto:info.marlewgames@gmail.com">info.marlewgames@gmail.com</a></td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h3 lang="fr">Description courte</h3>
+        <p lang="fr">Ironveil: Last Grid est un jeu de tower defense narratif pour Android. Une IA médicale devenue folle, MERIDIAN, a libéré le Voile, un fléau qui transforme les gens en mutants. Le joueur défend les derniers postes sains, où le remède est fabriqué, avec douze tours améliorables et quatre pièges. Certains mutants peuvent être soignés au lieu d'être tués : les soignés bâtissent un Poste Avancé et la carte s'agrandit. Quatre actes, quatre difficultés, un mode Sans fin, de la recherche, des films narrés et deux fins.</p>
+        
+        <p lang="fr">Créé par un petit studio familial, où le plus jeune membre teste chaque tour en premier.</p>
+        
+        <div class="dl">
+          <a class="btn" href="../presskit.zip" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+            <span lang="fr">Télécharger le dossier de presse</span> <span>ZIP · 2.0 MB</span>
+          </a>
+        </div>
+        <p class="note" lang="fr">Icône, captures en taille réelle, illustrations et ce texte. Libres d'utilisation pour parler du jeu.</p>
+        
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <a href="../privacy.html"><span lang="fr">Politique de confidentialité</span></a>
+      <a href="mailto:info.marlewgames@gmail.com">info.marlewgames@gmail.com</a>
+      <a href="#press"><span lang="fr">Dossier de presse</span></a>
+    </div>
+    <p>© 2026 MarLew Games · Ironveil: Last Grid · 2026-11-08</p>
+    <p lang="fr">Cette page n'utilise ni cookies ni traceurs. Les vidéos ne se chargent que lorsque vous appuyez sur lecture.</p>
+    
+    <p class="sum">SHA-256 · ironveil-0.11.3-beta.apk: ed4e560fdd760b4d9e603e9f4a0e6ec87c7ae9e040011b4577223ddff38eb713<br>SHA-256 · ironveil-0.11.3-beta-windows.zip: 13c0726e0acdedcb4d8c245f124c928313aac394f34fd7178dcd52e147600400</p>
+  </div>
+</footer>
+
+<div class="lightbox" role="dialog" aria-label="Screenshot"><img alt=""></div>
+
+<script>
+(function () {
+  var lang = document.documentElement.lang;
+  document.querySelectorAll(".langs a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      try { localStorage.setItem("lang", a.dataset.set); } catch (e) {}
+    });
+  });
+
+  // Close the language menu when clicking elsewhere.
+  var menu = document.querySelector("details.langs");
+  document.addEventListener("click", function (e) { if (!menu.contains(e.target)) menu.open = false; });
+
+  // Videos: nothing downloads until the poster is pressed.
+  document.querySelectorAll(".player").forEach(function (p) {
+    p.querySelector(".play").addEventListener("click", function () {
+      document.querySelectorAll(".player video").forEach(function (v) { v.pause(); });
+      var v = p.querySelector("video");
+      if (!v) {
+        v = document.createElement("video");
+        v.controls = true;
+        v.playsInline = true;
+        v.preload = "auto";
+        v.setAttribute("src", p.dataset.video + "_" + (p.hasAttribute("data-all") || lang === "pl" ? lang : "en") + ".mp4");
+        p.insertBefore(v, p.firstChild);
+      }
+      p.classList.add("played");
+      v.play();
+    });
+  });
+
+  // Screenshot lightbox.
+  var box = document.querySelector(".lightbox"), big = box.querySelector("img");
+  document.querySelectorAll(".shots a").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      big.src = a.getAttribute("href");
+      big.alt = a.querySelector("img").alt;
+      box.classList.add("open");
+    });
+  });
+  box.addEventListener("click", function () { box.classList.remove("open"); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") box.classList.remove("open"); });
+})();
+</script>
+</body>
+</html>
