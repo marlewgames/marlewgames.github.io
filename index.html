@@ -1,20 +1,31 @@
 <!doctype html>
-<html lang="en" data-lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>Ironveil: Last Grid — tower defense by MarLew Games</title>
-<meta name="description" content="Ironveil: Last Grid — a story tower defense game for Android. Hold the last clean outposts against a mutant plague. Coming to Google Play in early December.">
+<script>try{if(!localStorage.getItem("lang")&&(navigator.language||"").toLowerCase().indexOf("pl")===0)location.replace("pl/")}catch(e){}</script>
+
+<title>Ironveil: Last Grid – Tower Defense Game for Android | MarLew Games</title>
+<meta name="description" content="Free tower defense game for Android. Build and upgrade 12 towers, stop waves of mutants and cure the infected. Story campaign, Endless mode, plays offline.">
+<link rel="canonical" href="https://marlewgames.github.io/">
+<link rel="alternate" hreflang="en" href="https://marlewgames.github.io/">
+<link rel="alternate" hreflang="pl" href="https://marlewgames.github.io/pl/">
+<link rel="alternate" hreflang="x-default" href="https://marlewgames.github.io/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="MarLew Games">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://marlewgames.github.io/">
-<meta property="og:title" content="Ironveil: Last Grid — coming to Google Play">
-<meta property="og:description" content="Hold the line. Buy humanity the time to cure itself. A story tower defense game by MarLew Games.">
+<meta property="og:title" content="Ironveil: Last Grid – Tower Defense Game for Android | MarLew Games">
+<meta property="og:description" content="Free tower defense game for Android. Build and upgrade 12 towers, stop waves of mutants and cure the infected. Story campaign, Endless mode, plays offline.">
 <meta property="og:image" content="https://marlewgames.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b1114">
 <link rel="icon" href="img/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="img/app-icon.png">
+<link rel="apple-touch-icon" href="img/app-icon-192.png">
+<link rel="preload" as="image" href="img/hero.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://marlewgames.github.io/#studio","name":"MarLew Games","url":"https://marlewgames.github.io/","logo":"https://marlewgames.github.io/img/app-icon.png","email":"info.marlewgames@gmail.com"},{"@type":"VideoGame","@id":"https://marlewgames.github.io/#game","name":"Ironveil: Last Grid","alternateName":"Ironveil","url":"https://marlewgames.github.io/","description":"Free tower defense game for Android. Build and upgrade 12 towers, stop waves of mutants and cure the infected. Story campaign, Endless mode, plays offline.","image":"https://marlewgames.github.io/img/og.jpg","screenshot":["https://marlewgames.github.io/img/shots/battle.jpg","https://marlewgames.github.io/img/shots/haven.jpg","https://marlewgames.github.io/img/shots/blackwater.jpg","https://marlewgames.github.io/img/shots/floodgate.jpg","https://marlewgames.github.io/img/shots/towers.jpg","https://marlewgames.github.io/img/shots/mutants.jpg","https://marlewgames.github.io/img/shots/research.jpg","https://marlewgames.github.io/img/shots/missions.jpg","https://marlewgames.github.io/img/shots/title.jpg"],"genre":["Tower defense","Strategy"],"applicationCategory":"GameApplication","gamePlatform":"Android","operatingSystem":"Android 7.0 or newer","playMode":"SinglePlayer","author":{"@id":"https://marlewgames.github.io/#studio"},"publisher":{"@id":"https://marlewgames.github.io/#studio"},"inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://marlewgames.github.io/#beta"}},{"@type":"VideoObject","name":"Ironveil: Last Grid – Act III teaser","description":"Free tower defense game for Android. Build and upgrade 12 towers, stop waves of mutants and cure the infected. Story campaign, Endless mode, plays offline.","thumbnailUrl":"https://marlewgames.github.io/media/teaser3.jpg","contentUrl":"https://marlewgames.github.io/media/teaser3_en.mp4","uploadDate":"2026-11-07","duration":"PT30S","inLanguage":"en"},{"@type":"VideoObject","name":"Ironveil: Last Grid – intro film","description":"Free tower defense game for Android. Build and upgrade 12 towers, stop waves of mutants and cure the infected. Story campaign, Endless mode, plays offline.","thumbnailUrl":"https://marlewgames.github.io/media/intro.jpg","contentUrl":"https://marlewgames.github.io/media/intro_en.mp4","uploadDate":"2026-11-07","duration":"PT1M26S","inLanguage":"en"},{"@type":"VideoObject","name":"Ironveil: Last Grid – Act IV film","description":"Free tower defense game for Android. Build and upgrade 12 towers, stop waves of mutants and cure the infected. Story campaign, Endless mode, plays offline.","thumbnailUrl":"https://marlewgames.github.io/media/core.jpg","contentUrl":"https://marlewgames.github.io/media/core_en.mp4","uploadDate":"2026-11-07","duration":"PT25S","inLanguage":"en"}]}</script>
 <style>
 :root {
   --bg: #0b1114;
@@ -35,7 +46,6 @@ body {
   margin: 0; background: var(--bg); color: var(--text); overflow-x: hidden;
   font: 17px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-html[data-lang="en"] [lang="pl"], html[data-lang="pl"] [lang="en"] { display: none !important; }
 a { color: var(--teal); }
 img, video { max-width: 100%; }
 .wrap { max-width: 1140px; margin: 0 auto; padding: 0 16px; }
@@ -50,8 +60,8 @@ nav.links { display: flex; gap: 22px; font-size: 15px; }
 nav.links a { color: var(--muted); text-decoration: none; }
 nav.links a:hover { color: var(--text); }
 .langs { display: flex; gap: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 3px; flex: none; }
-.langs button { background: none; border: 0; color: var(--muted); font: inherit; font-size: 14px; padding: 3px 12px; border-radius: 999px; cursor: pointer; }
-.langs button[aria-pressed="true"] { background: var(--teal-deep); color: #fff; }
+.langs a { display: block; color: var(--muted); text-decoration: none; font-size: 14px; padding: 3px 12px; border-radius: 999px; }
+.langs a[aria-current="page"] { background: var(--teal-deep); color: #fff; }
 
 /* hero */
 .hero { position: relative; min-height: 640px; display: flex; align-items: center; overflow: hidden; }
@@ -64,7 +74,7 @@ nav.links a:hover { color: var(--text); }
 .app-icon { width: 92px; height: 92px; border-radius: 22px; box-shadow: 0 8px 30px rgba(0,0,0,.55), 0 0 0 1px rgba(93,202,165,.25); display: block; }
 .kicker { display: inline-block; margin-top: 22px; font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); }
 h1 { font-size: clamp(48px, 9vw, 92px); line-height: .95; margin: 8px 0 2px; letter-spacing: .03em; font-weight: 800; text-shadow: 0 2px 24px rgba(0,0,0,.6); }
-.sub { color: var(--amber); font-size: clamp(20px, 3.4vw, 30px); font-weight: 700; letter-spacing: .32em; margin: 0 0 18px; }
+.sub { display: block; text-shadow: none; line-height: 1.3; color: var(--amber); font-size: clamp(20px, 3.4vw, 30px); font-weight: 700; letter-spacing: .32em; margin: 6px 0 18px; }
 .hook { font-size: clamp(19px, 2.4vw, 23px); margin: 0 0 8px; }
 .tagline { color: var(--muted); font-size: 17px; margin: 0 0 26px; max-width: 540px; }
 
@@ -211,16 +221,16 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px
       <span>MarLew Games<small>Indie games</small></span>
     </a>
     <nav class="links">
-      <a href="#teasers"><span lang="en">Teasers</span><span lang="pl">Zwiastuny</span></a>
-      <a href="#acts"><span lang="en">Story</span><span lang="pl">Fabuła</span></a>
-      <a href="#features"><span lang="en">Features</span><span lang="pl">Cechy</span></a>
-      <a href="#screens"><span lang="en">Screenshots</span><span lang="pl">Zrzuty</span></a>
+      <a href="#teasers"><span lang="en">Teasers</span></a>
+      <a href="#acts"><span lang="en">Story</span></a>
+      <a href="#features"><span lang="en">Features</span></a>
+      <a href="#screens"><span lang="en">Screenshots</span></a>
       <a href="#beta">Beta</a>
-      <a href="#press"><span lang="en">Press</span><span lang="pl">Prasa</span></a>
+      <a href="#press"><span lang="en">Press</span></a>
     </nav>
     <div class="langs" role="group" aria-label="Language">
-      <button type="button" data-set="en" aria-pressed="true">EN</button>
-      <button type="button" data-set="pl" aria-pressed="false">PL</button>
+      <a href="./" hreflang="en" data-set="en" aria-current="page">EN</a>
+      <a href="pl/" hreflang="pl" data-set="pl">PL</a>
     </div>
   </div>
 </header>
@@ -229,33 +239,32 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px
   <div class="hero-bg" role="img" aria-label="Haven Dock at night, under the green Veil"></div>
   <div class="wrap">
     <div class="hero-body">
-      <img class="app-icon" src="img/app-icon.png" alt="Ironveil: Last Grid icon" width="92" height="92">
-      <span class="kicker"><span lang="en">Story tower defense · Android</span><span lang="pl">Fabularny tower defense · Android</span></span>
-      <h1>IRONVEIL</h1>
-      <p class="sub">LAST GRID</p>
+      <img class="app-icon" src="img/app-icon-192.png" alt="Ironveil: Last Grid app icon" width="92" height="92">
+      <span class="kicker"><span lang="en">Tower defense game for Android</span></span>
+      <h1>IRONVEIL <span class="sub">LAST GRID</span></h1>
       <p class="hook">
         <span lang="en">Hold the line. Buy humanity the time to cure itself.</span>
-        <span lang="pl">Utrzymaj linię. Daj ludzkości czas, by znalazła lek.</span>
+        
       </p>
       <p class="tagline">
         <span lang="en">A rogue medical AI turned the world into mutants. You guard the last clean outposts, where the cure is being made, and some of the monsters can still be saved.</span>
-        <span lang="pl">Zbuntowana medyczna AI zmieniła świat w mutanty. Strzeżesz ostatnich czystych placówek, w których powstaje lek, a niektóre potwory wciąż da się ocalić.</span>
+        
       </p>
       <div class="cta">
         <span class="play-badge" title="The Google Play listing is on its way">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.2 2.6c-.3.3-.4.7-.4 1.2v16.4c0 .5.1.9.4 1.2l9.3-9.4z" fill="#5dcaa5"/><path d="M16.6 15.1l-3.1-3.1-9.3 9.4c.4.4 1 .4 1.7 0z" fill="#e8a33a"/><path d="M16.6 8.9L5.9 2.6c-.7-.4-1.3-.3-1.7 0l9.3 9.4z" fill="#8fe0c4"/><path d="M20.3 11l-3.7-2.1-3.1 3.1 3.1 3.1 3.7-2.1c1-.6 1-1.5 0-2z" fill="#f4c56d"/></svg>
-          <span><small lang="en">Coming soon to</small><small lang="pl">Wkrótce w</small><b>Google Play</b></span>
+          <span><small lang="en">Coming soon to</small><b>Google Play</b></span>
         </span>
         <a class="btn ghost" href="#teasers">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
-          <span lang="en">Watch the teaser</span><span lang="pl">Obejrzyj zwiastun</span>
+          <span lang="en">Watch the teaser</span>
         </a>
       </div>
       <div class="plan">
-        <div><span class="dot"></span><b lang="en">Early December</b><b lang="pl">Początek grudnia</b>
-          <span lang="en">Google Play launch · Acts I and II</span><span lang="pl">Premiera w Google Play · Akty I i II</span></div>
-        <div><span class="dot later"></span><b lang="en">Around Christmas</b><b lang="pl">Około świąt</b>
-          <span lang="en">Acts III and IV · free update</span><span lang="pl">Akty III i IV · darmowa aktualizacja</span></div>
+        <div><span class="dot"></span><b lang="en">Early December</b>
+          <span lang="en">Google Play launch · Acts I and II</span></div>
+        <div><span class="dot later"></span><b lang="en">Around Christmas</b>
+          <span lang="en">Acts III and IV · free update</span></div>
       </div>
     </div>
   </div>
@@ -264,36 +273,36 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px
 <main class="wrap">
 
   <section id="teasers">
-    <p class="eyebrow"><span lang="en">Teasers</span><span lang="pl">Zwiastuny</span></p>
-    <h2><span lang="en">See it move</span><span lang="pl">Zobacz w ruchu</span></h2>
+    <p class="eyebrow"><span lang="en">Teasers</span></p>
+    <h2><span lang="en">See it move</span></h2>
     <div class="films">
       <div>
         <div class="player" data-video="media/teaser3">
           <button class="play" type="button" style="background-image:url(media/teaser3.jpg)" aria-label="Play the Act III teaser">
             <i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i>
-            <span class="label"><b lang="en">Act III: Harvest</b><b lang="pl">Akt III: Żniwa</b><span lang="en">Teaser · 30 s · free update around Christmas</span><span lang="pl">Zwiastun · 30 s · darmowa aktualizacja około świąt</span></span>
+            <span class="label"><b lang="en">Act III: Harvest</b><span lang="en">Teaser · 30 s · free update around Christmas</span></span>
           </button>
         </div>
-        <p class="caption"><span lang="en">MERIDIAN stops killing and starts building. Spine Works, the factory city that makes the cure, is next.</span><span lang="pl">MERIDIAN przestaje zabijać i zaczyna budować. Następne jest Spine Works, fabryczne miasto, które wytwarza lek.</span></p>
+        <p class="caption"><span lang="en">MERIDIAN stops killing and starts building. Spine Works, the factory city that makes the cure, is next.</span></p>
       </div>
       <div class="side">
         <div>
           <div class="player" data-video="media/intro">
             <button class="play" type="button" style="background-image:url(media/intro.jpg)" aria-label="Play the intro film">
               <i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i>
-              <span class="label"><b lang="en">The intro film</b><b lang="pl">Film wprowadzający</b><span lang="en">How the Veil began · 1:26</span><span lang="pl">Jak zaczęła się Zasłona · 1:26</span></span>
+              <span class="label"><b lang="en">The intro film</b><span lang="en">How the Veil began · 1:26</span></span>
             </button>
           </div>
-          <p class="caption"><span lang="en">Narrated in English and Polish, with subtitles in ten languages in the game.</span><span lang="pl">Z lektorem po polsku i angielsku, a w grze z napisami w dziesięciu językach.</span></p>
+          <p class="caption"><span lang="en">Narrated in English and Polish, with subtitles in ten languages in the game.</span></p>
         </div>
         <div>
           <div class="player" data-video="media/core">
             <button class="play" type="button" style="background-image:url(media/core.jpg)" aria-label="Play the Act IV film">
               <i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i>
-              <span class="label"><b lang="en">Act IV: Dawn</b><b lang="pl">Akt IV: Świt</b><span lang="en">The road to Ironveil Core · 0:25</span><span lang="pl">Droga do Ironveil Core · 0:25</span></span>
+              <span class="label"><b lang="en">Act IV: Dawn</b><span lang="en">The road to Ironveil Core · 0:25</span></span>
             </button>
           </div>
-          <p class="caption"><span lang="en">The finale, coming with Act III around Christmas.</span><span lang="pl">Finał, który przyjdzie razem z Aktem III około świąt.</span></p>
+          <p class="caption"><span lang="en">The finale, coming with Act III around Christmas.</span></p>
         </div>
       </div>
     </div>
@@ -303,189 +312,225 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px
       <div class="player" data-video="media/clip_outpost"><button class="play" type="button" style="background-image:url(media/clip_outpost.jpg)" aria-label="Play clip: the map grows"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i></button></div>
       <div class="player" data-video="media/clip_endless"><button class="play" type="button" style="background-image:url(media/clip_endless.jpg)" aria-label="Play clip: Endless mode"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></i></button></div>
     </div>
-    <p class="caption"><span lang="en">Gameplay clips, recorded in the game.</span><span lang="pl">Fragmenty rozgrywki nagrane w grze.</span></p>
+    <p class="caption"><span lang="en">Gameplay clips, recorded in the game.</span></p>
   </section>
 
   <section id="acts">
-    <p class="eyebrow"><span lang="en">The campaign</span><span lang="pl">Kampania</span></p>
-    <h2><span lang="en">Four outposts. One cure.</span><span lang="pl">Cztery placówki. Jeden lek.</span></h2>
+    <p class="eyebrow"><span lang="en">The campaign</span></p>
+    <h2><span lang="en">Four outposts. One cure.</span></h2>
     <p class="lead">
       <span lang="en">Each outpost makes one part of Project Dawn, and every breakthrough makes MERIDIAN strike harder: first with mutants, then with mutants wearing its machines. Story films and radio broadcasts tell the tale between missions, and the ending is your choice.</span>
-      <span lang="pl">Każda placówka wytwarza jedną część Projektu Świt, a każdy przełom sprawia, że MERIDIAN uderza mocniej: najpierw mutantami, potem mutantami zakutymi w jej maszyny. Między misjami historię opowiadają filmy i komunikaty radiowe, a zakończenie wybierasz Ty.</span>
+      
     </p>
     <div class="acts">
-      <div class="act" style="background-image:url(img/act1.jpg)"><div><span class="tag" lang="en">At launch</span><span class="tag" lang="pl">Na start</span><h3 lang="en">I · Quarantine</h3><h3 lang="pl">I · Kwarantanna</h3><p>Haven Dock</p></div></div>
-      <div class="act" style="background-image:url(img/act2.jpg)"><div><span class="tag" lang="en">At launch</span><span class="tag" lang="pl">Na start</span><h3>II · Blackwater</h3><p>Blackwater Station</p></div></div>
-      <div class="act later" style="background-image:url(img/act3.jpg)"><div><span class="tag" lang="en">At Christmas</span><span class="tag" lang="pl">Na święta</span><h3 lang="en">III · Harvest</h3><h3 lang="pl">III · Żniwa</h3><p>Spine Works</p></div></div>
-      <div class="act later" style="background-image:url(img/act4.jpg)"><div><span class="tag" lang="en">At Christmas</span><span class="tag" lang="pl">Na święta</span><h3 lang="en">IV · Dawn</h3><h3 lang="pl">IV · Świt</h3><p>Ironveil Core</p></div></div>
+      <div class="act" style="background-image:url(img/act1.jpg)"><div><span class="tag" lang="en">At launch</span><h3 lang="en">I · Quarantine</h3><p>Haven Dock</p></div></div>
+      <div class="act" style="background-image:url(img/act2.jpg)"><div><span class="tag" lang="en">At launch</span><h3>II · Blackwater</h3><p>Blackwater Station</p></div></div>
+      <div class="act later" style="background-image:url(img/act3.jpg)"><div><span class="tag" lang="en">At Christmas</span><h3 lang="en">III · Harvest</h3><p>Spine Works</p></div></div>
+      <div class="act later" style="background-image:url(img/act4.jpg)"><div><span class="tag" lang="en">At Christmas</span><h3 lang="en">IV · Dawn</h3><p>Ironveil Core</p></div></div>
     </div>
   </section>
 
   <section id="features">
-    <p class="eyebrow"><span lang="en">Features</span><span lang="pl">Cechy gry</span></p>
-    <h2><span lang="en">Easy to start. Hard to master.</span><span lang="pl">Łatwo zacząć. Trudno opanować.</span></h2>
+    <p class="eyebrow"><span lang="en">Features</span></p>
+    <h2><span lang="en">A tower defense game that's easy to start and hard to master</span></h2>
+    <p class="lead">
+      <span lang="en">Ironveil: Last Grid is a free 3D tower defense game for Android with a full story campaign. Place towers beside the road, upgrade them, stop each wave of mutants before it reaches your outpost, and play it all offline.</span>
+      
+    </p>
     <div class="features">
       <div class="card">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V10l4-3v13M10 20V4l4 3v13M16 20v-8l4-2v10"/></svg>
-        <h3 lang="en">12 towers, 4 traps</h3><h3 lang="pl">12 wież, 4 pułapki</h3>
+        <h3 lang="en">12 towers, 4 traps</h3>
         <p lang="en">Five upgrade tiers with a choice of path. Link towers with relays, overcharge them, and reshape the enemy road between waves.</p>
-        <p lang="pl">Pięć poziomów ulepszeń z wyborem ścieżki. Łącz wieże przekaźnikami, przeładowuj je i przebudowuj drogę wroga między falami.</p>
+        
       </div>
       <div class="card">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6c0 2.2 1.2 3.6 2 4.5V17h8v-3.5c.8-.9 2-2.3 2-4.5a6 6 0 0 0-6-6z"/><path d="M9 21h6M10 10h.01M14 10h.01"/></svg>
-        <h3 lang="en">Mutants that evolve</h3><h3 lang="pl">Mutanty, które ewoluują</h3>
+        <h3 lang="en">Mutants that evolve</h3>
         <p lang="en">Swarms, brutes, spore carriers, flyers and huge bosses. Later they come plated in machine armour, so you need the right damage type.</p>
-        <p lang="pl">Roje, osiłki, nosiciele zarodników, latające bestie i ogromni bossowie. Później przychodzą w maszynowych pancerzach, więc potrzebujesz właściwego typu obrażeń.</p>
+        
       </div>
       <div class="card hl">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 4.5v11L12 22l-8-4.5v-11z"/><path d="M12 8v8M8 12h8"/></svg>
-        <h3 lang="en">Cure, don't just kill</h3><h3 lang="pl">Lecz, nie tylko niszcz</h3>
+        <h3 lang="en">Cure, don't just kill</h3>
         <p lang="en">Cured mutants build a Forward Outpost. When it stands, the camera pulls back, the map grows and new roads open.</p>
-        <p lang="pl">Wyleczeni mutanci budują wysuniętą placówkę. Gdy stanie, kamera się oddala, mapa rośnie i otwierają się nowe drogi.</p>
+        
       </div>
       <div class="card">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 18h3V12H4zM10.5 18h3V8h-3zM17 18h3V4h-3z"/></svg>
-        <h3 lang="en">Four difficulties</h3><h3 lang="pl">Cztery poziomy trudności</h3>
+        <h3 lang="en">Four difficulties</h3>
         <p lang="en">Easy, Normal, Hard and Hardcore. Relax through the story or chase three stars on every map.</p>
-        <p lang="pl">Łatwy, Normalny, Trudny i Hardcore. Przejdź fabułę na luzie albo zdobywaj trzy gwiazdki na każdej mapie.</p>
+        
       </div>
       <div class="card">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 8c-3 0-4 2-4 4s1 4 4 4c4 0 6-8 10-8 3 0 4 2 4 4s-1 4-4 4c-4 0-6-8-10-8z"/></svg>
-        <h3 lang="en">Endless mode</h3><h3 lang="pl">Tryb nieskończony</h3>
+        <h3 lang="en">Endless mode</h3>
         <p lang="en">How long can you hold? Waves keep growing until the line breaks. Beat your best wave.</p>
-        <p lang="pl">Jak długo wytrzymasz? Fale rosną, aż linia pęknie. Pobij swój rekord.</p>
+        
       </div>
       <div class="card">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/><path d="M7.5 15h9"/></svg>
-        <h3 lang="en">Research</h3><h3 lang="pl">Badania</h3>
+        <h3 lang="en">Research</h3>
         <p lang="en">Earn credits in battle and spend them in the lab on lasting upgrades that carry into every mission.</p>
-        <p lang="pl">Zdobywaj kredyty w bitwach i wydawaj je w laboratorium na trwałe ulepszenia, które działają w każdej misji.</p>
+        
       </div>
       <div class="card">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4.5-2.5z"/></svg>
-        <h3 lang="en">A story with films</h3><h3 lang="pl">Fabuła z filmami</h3>
+        <h3 lang="en">A story with films</h3>
         <p lang="en">A narrated intro, story films between acts, MERIDIAN's broadcasts, and two endings. Ten languages.</p>
-        <p lang="pl">Intro z lektorem, filmy fabularne między aktami, komunikaty MERIDIAN i dwa zakończenia. Dziesięć języków.</p>
+        
       </div>
       <div class="card hl">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>
-        <h3 lang="en">Fair and offline</h3><h3 lang="pl">Uczciwie i offline</h3>
+        <h3 lang="en">Fair and offline</h3>
         <p lang="en">Plays offline, no account. Free to play, ads only if you want them: watch one for a bonus, or never.</p>
-        <p lang="pl">Działa bez internetu i bez konta. Darmowa, a reklamy tylko gdy chcesz: obejrzyj jedną za bonus albo wcale.</p>
+        
       </div>
     </div>
   </section>
 
   <section id="screens">
-    <p class="eyebrow"><span lang="en">Screenshots</span><span lang="pl">Zrzuty ekranu</span></p>
-    <h2><span lang="en">Built for your phone</span><span lang="pl">Zrobiona na telefon</span></h2>
+    <p class="eyebrow"><span lang="en">Screenshots</span></p>
+    <h2><span lang="en">Tower defense built for your phone</span></h2>
     <div class="shots">
-      <a class="wide" href="img/shots/battle.jpg"><img src="img/shots/battle.jpg" alt="Towers firing at mutants on the Haven Dock map" data-pl="Wieże strzelają do mutantów na mapie Haven Dock" loading="lazy" width="1280" height="720"></a>
-      <a href="img/shots/haven.jpg"><img src="img/shots/haven.jpg" alt="A battle in Act I with the full game screen" data-pl="Bitwa w Akcie I z pełnym ekranem gry" loading="lazy" width="1280" height="720"></a>
-      <a href="img/shots/blackwater.jpg"><img src="img/shots/blackwater.jpg" alt="The flooded Blackwater Station in Act II" data-pl="Zalana stacja Blackwater w Akcie II" loading="lazy" width="1280" height="720"></a>
-      <a href="img/shots/floodgate.jpg"><img src="img/shots/floodgate.jpg" alt="A late Act II map with traps on the road" data-pl="Mapa z końca Aktu II z pułapkami na drodze" loading="lazy" width="1280" height="720"></a>
-      <a href="img/shots/towers.jpg"><img src="img/shots/towers.jpg" alt="The tower gallery: the Relay Node" data-pl="Galeria wież: Węzeł przekaźnikowy" loading="lazy" width="1280" height="720"></a>
-      <a href="img/shots/mutants.jpg"><img src="img/shots/mutants.jpg" alt="The mutant gallery: the Rookwing" data-pl="Galeria mutantów: Rookwing" loading="lazy" width="1280" height="720"></a>
-      <a href="img/shots/research.jpg"><img src="img/shots/research.jpg" alt="Research: lasting upgrades" data-pl="Badania: trwałe ulepszenia" loading="lazy" width="1280" height="720"></a>
-      <a href="img/shots/missions.jpg"><img src="img/shots/missions.jpg" alt="Act II mission select" data-pl="Wybór misji w Akcie II" loading="lazy" width="1280" height="720"></a>
-      <a href="img/shots/title.jpg"><img src="img/shots/title.jpg" alt="The title screen" data-pl="Ekran tytułowy" loading="lazy" width="1280" height="720"></a>
+      <a class="wide" href="img/shots/battle.jpg"><img src="img/shots/battle.jpg" alt="Tower defense battle: towers firing at mutants on the Haven Dock map" loading="lazy" width="1280" height="720"></a>
+      <a href="img/shots/haven.jpg"><img src="img/shots/haven.jpg" alt="A battle in Act I with the full game screen" loading="lazy" width="1280" height="720"></a>
+      <a href="img/shots/blackwater.jpg"><img src="img/shots/blackwater.jpg" alt="The flooded Blackwater Station in Act II" loading="lazy" width="1280" height="720"></a>
+      <a href="img/shots/floodgate.jpg"><img src="img/shots/floodgate.jpg" alt="A late Act II map with traps on the road" loading="lazy" width="1280" height="720"></a>
+      <a href="img/shots/towers.jpg"><img src="img/shots/towers.jpg" alt="The tower gallery: the Relay Node" loading="lazy" width="1280" height="720"></a>
+      <a href="img/shots/mutants.jpg"><img src="img/shots/mutants.jpg" alt="The mutant gallery: the Rookwing" loading="lazy" width="1280" height="720"></a>
+      <a href="img/shots/research.jpg"><img src="img/shots/research.jpg" alt="Research: lasting upgrades" loading="lazy" width="1280" height="720"></a>
+      <a href="img/shots/missions.jpg"><img src="img/shots/missions.jpg" alt="Act II mission select" loading="lazy" width="1280" height="720"></a>
+      <a href="img/shots/title.jpg"><img src="img/shots/title.jpg" alt="The title screen" loading="lazy" width="1280" height="720"></a>
     </div>
   </section>
 
   <section id="beta">
-    <p class="eyebrow"><span lang="en">Can't wait?</span><span lang="pl">Nie możesz się doczekać?</span></p>
-    <h2><span lang="en">Try the free beta</span><span lang="pl">Zagraj w darmową betę</span></h2>
+    <p class="eyebrow"><span lang="en">Can't wait?</span></p>
+    <h2><span lang="en">Try the free beta</span></h2>
     <div class="beta">
       <div class="card">
-        <h3><span lang="en">Beta 0.11.3 for Android and Windows</span><span lang="pl">Beta 0.11.3 na Androida i Windows</span></h3>
+        <h3><span lang="en">Beta 0.11.3 for Android and Windows</span></h3>
         <p class="note">
           <span lang="en">Play before the Google Play launch and tell us what you think. The beta works for <strong>7 days</strong> from the first launch; then download the new version here. Your progress is kept.</span>
-          <span lang="pl">Zagraj przed premierą w Google Play i daj nam znać, co myślisz. Beta działa <strong>7 dni</strong> od pierwszego uruchomienia; potem pobierz tutaj nową wersję. Postępy zostają zachowane.</span>
+          
         </p>
         <div class="dl">
           <a class="btn" href="https://github.com/marlewgames/marlewgames.github.io/releases/download/v0.11.3/ironveil-0.11.3-beta.apk" download>
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
-            <span lang="en">Android</span><span lang="pl">Android</span> <span>APK · 163 MB</span>
+            <span lang="en">Android</span> <span>APK · 163 MB</span>
           </a>
           <a class="btn ghost" href="https://github.com/marlewgames/marlewgames.github.io/releases/download/v0.11.3/ironveil-0.11.3-beta-windows.zip" download>
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.1l7.4-1v7.2H3zm8.3-1.2L21 2.5v8.8h-9.7zM3 12.2h7.4v7.2L3 18.4zm8.3 0H21V21l-9.7-1.4z"/></svg>
             Windows <span>ZIP · 172 MB</span>
           </a>
         </div>
-        <p class="note"><span lang="en">Feedback and bugs:</span><span lang="pl">Uwagi i błędy:</span> <a href="mailto:info.marlewgames@gmail.com">info.marlewgames@gmail.com</a></p>
+        <p class="note"><span lang="en">Feedback and bugs:</span> <a href="mailto:info.marlewgames@gmail.com">info.marlewgames@gmail.com</a></p>
       </div>
       <div>
         <details>
-          <summary><span lang="en">How to install on Android</span><span lang="pl">Jak zainstalować na Androidzie</span></summary>
+          <summary><span lang="en">How to install on Android</span></summary>
           <ol lang="en">
             <li>Tap <strong>Android</strong> above on your phone.</li>
             <li>Open the downloaded file. If Android asks, allow installs from your browser (<strong>Settings → Allow from this source</strong>).</li>
             <li>Play Protect may say the app is unknown. Tap <strong>More details → Install anyway</strong>.</li>
             <li>Hold the phone sideways and have fun.</li>
           </ol>
-          <ol lang="pl">
-            <li>Na telefonie stuknij powyżej <strong>Android</strong>.</li>
-            <li>Otwórz pobrany plik. Jeśli Android zapyta, zezwól przeglądarce na instalację (<strong>Ustawienia → Zezwalaj z tego źródła</strong>).</li>
-            <li>Play Protect może napisać, że aplikacja jest nieznana. Stuknij <strong>Więcej szczegółów → Zainstaluj mimo to</strong>.</li>
-            <li>Obróć telefon poziomo i graj.</li>
-          </ol>
+          
           <p class="req" lang="en">Android 7 or newer, 64-bit phone. A new beta installs over the old one and keeps your progress.</p>
-          <p class="req" lang="pl">Android 7 lub nowszy, telefon 64-bitowy. Nowa beta instaluje się na starą i zachowuje postępy.</p>
+          
         </details>
         <details>
-          <summary><span lang="en">How to install on Windows</span><span lang="pl">Jak zainstalować na Windows</span></summary>
+          <summary><span lang="en">How to install on Windows</span></summary>
           <ol lang="en">
             <li>Download the ZIP and <strong>extract it</strong> (right-click → Extract All).</li>
             <li>Run <strong>Ironveil.exe</strong>.</li>
             <li>If Windows shows "Windows protected your PC", click <strong>More info → Run anyway</strong>. The game is new and not code-signed yet.</li>
             <li>Mouse: drag towers onto the map, wheel to zoom.</li>
           </ol>
-          <ol lang="pl">
-            <li>Pobierz plik ZIP i <strong>rozpakuj go</strong> (prawy przycisk → Wyodrębnij wszystkie).</li>
-            <li>Uruchom <strong>Ironveil.exe</strong>.</li>
-            <li>Jeśli Windows pokaże „System Windows ochronił ten komputer”, kliknij <strong>Więcej informacji → Uruchom mimo to</strong>. Gra jest nowa i nie ma jeszcze podpisu cyfrowego.</li>
-            <li>Myszka: przeciągaj wieże na mapę, kółkiem przybliżaj.</li>
-          </ol>
+          
           <p class="req" lang="en">Windows 10 or 11, 64-bit, a graphics card with Vulkan or DirectX 12.</p>
-          <p class="req" lang="pl">Windows 10 lub 11, 64-bit, karta graficzna z Vulkanem lub DirectX 12.</p>
+          
         </details>
       </div>
     </div>
   </section>
 
+  <section id="faq">
+    <p class="eyebrow">FAQ</p>
+    <h2><span lang="en">Questions about the game</span></h2>
+    <div>
+        <details>
+          <summary><span lang="en">Is Ironveil: Last Grid free?</span></summary>
+          <p class="req" lang="en">Yes. The game is free to download and play. Some optional buttons let you watch a short ad for a bonus, but ads are never forced and you can finish the whole game without one.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="en">Can I play this tower defense game offline?</span></summary>
+          <p class="req" lang="en">Yes. It needs no account and no internet connection. A connection is only used if you choose to watch an optional ad.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="en">When does it come out on Google Play?</span></summary>
+          <p class="req" lang="en">Early December 2026 with Acts I and II. Acts III and IV follow as a free update around Christmas. You can try the free beta now.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="en">Which devices can run it?</span></summary>
+          <p class="req" lang="en">Android 7 or newer on a 64-bit phone. The beta also runs on 64-bit Windows 10 and 11. There is no iPhone version at the moment.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="en">What makes it different from other tower defense games?</span></summary>
+          <p class="req" lang="en">Some mutants can be cured instead of killed. The cured build a Forward Outpost, the camera pulls back and the map grows in the middle of the battle, with new roads to defend. You can also reshape the enemy road between waves.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="en">What age is it for?</span></summary>
+          <p class="req" lang="en">It is made for players aged 13 and up: it has mutants, battles and a dark story.</p>
+          
+        </details>
+        <details>
+          <summary><span lang="en">Which languages does it support?</span></summary>
+          <p class="req" lang="en">Ten languages. The story is narrated in English and Polish, and every language has subtitles.</p>
+          
+        </details>
+    </div>
+  </section>
+
   <section id="press">
-    <p class="eyebrow"><span lang="en">Press kit</span><span lang="pl">Dla mediów</span></p>
-    <h2><span lang="en">Writing about the game?</span><span lang="pl">Piszesz o grze?</span></h2>
+    <p class="eyebrow"><span lang="en">Press kit</span></p>
+    <h2><span lang="en">Writing about the game?</span></h2>
     <div class="press">
       <div class="card">
         <div class="press-icon">
-          <img src="img/app-icon.png" alt="Game icon" width="84" height="84" loading="lazy">
+          <img src="img/app-icon-192.png" alt="Ironveil: Last Grid app icon" width="84" height="84" loading="lazy">
           <div><b>Ironveil: Last Grid</b><br><span class="note">MarLew Games</span></div>
         </div>
         <table class="facts">
-          <tr><th lang="en">Developer</th><th lang="pl">Twórca</th><td>MarLew Games</td></tr>
-          <tr><th lang="en">Genre</th><th lang="pl">Gatunek</th><td lang="en">Story tower defense</td><td lang="pl">Fabularny tower defense</td></tr>
-          <tr><th lang="en">Platform</th><th lang="pl">Platforma</th><td>Android (Google Play)</td></tr>
-          <tr><th lang="en">Release</th><th lang="pl">Premiera</th><td lang="en">Early December 2026 (Acts I–II); Acts III–IV around Christmas</td><td lang="pl">Początek grudnia 2026 (Akty I–II); Akty III–IV około świąt</td></tr>
-          <tr><th lang="en">Price</th><th lang="pl">Cena</th><td lang="en">Free, optional rewarded ads</td><td lang="pl">Darmowa, reklamy tylko z wyboru</td></tr>
-          <tr><th lang="en">Languages</th><th lang="pl">Języki</th><td lang="en">10 (voice: English, Polish)</td><td lang="pl">10 (lektor: polski, angielski)</td></tr>
-          <tr><th lang="en">Contact</th><th lang="pl">Kontakt</th><td><a href="mailto:info.marlewgames@gmail.com">info.marlewgames@gmail.com</a></td></tr>
+          <tr><th lang="en">Developer</th><td>MarLew Games</td></tr>
+          <tr><th lang="en">Genre</th><td lang="en">Story tower defense</td></tr>
+          <tr><th lang="en">Platform</th><td>Android (Google Play)</td></tr>
+          <tr><th lang="en">Release</th><td lang="en">Early December 2026 (Acts I–II); Acts III–IV around Christmas</td></tr>
+          <tr><th lang="en">Price</th><td lang="en">Free, optional rewarded ads</td></tr>
+          <tr><th lang="en">Languages</th><td lang="en">10 (voice: English, Polish)</td></tr>
+          <tr><th lang="en">Contact</th><td><a href="mailto:info.marlewgames@gmail.com">info.marlewgames@gmail.com</a></td></tr>
         </table>
       </div>
       <div class="card">
-        <h3 lang="en">Short description</h3><h3 lang="pl">Krótki opis</h3>
+        <h3 lang="en">Short description</h3>
         <p lang="en">Ironveil: Last Grid is a story tower defense game for Android. A rogue medical AI called MERIDIAN has released the Veil, a plague that turns people into mutants. The player defends the last clean outposts, where the cure is being made, with twelve upgradeable towers and four traps. Some mutants can be cured instead of killed: the cured build a Forward Outpost, and the map grows. Four acts, four difficulties, an Endless mode, research, narrated story films and two endings.</p>
-        <p lang="pl">Ironveil: Last Grid to fabularny tower defense na Androida. Zbuntowana medyczna AI o nazwie MERIDIAN wypuściła Zasłonę, zarazę, która zmienia ludzi w mutanty. Gracz broni ostatnich czystych placówek, w których powstaje lek, za pomocą dwunastu ulepszanych wież i czterech pułapek. Niektóre mutanty można wyleczyć zamiast zabić: wyleczeni budują wysuniętą placówkę, a mapa rośnie. Cztery akty, cztery poziomy trudności, tryb nieskończony, badania, filmy fabularne z lektorem i dwa zakończenia.</p>
+        
         <p lang="en">Made by a small family studio: a parent and their kid, who tests every tower first.</p>
-        <p lang="pl">Robi ją małe rodzinne studio: rodzic i dziecko, które jako pierwsze testuje każdą wieżę.</p>
+        
         <div class="dl">
           <a class="btn" href="presskit.zip" download>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
-            <span lang="en">Download press kit</span><span lang="pl">Pobierz press kit</span> <span>ZIP · 2.0 MB</span>
+            <span lang="en">Download press kit</span> <span>ZIP · 2.0 MB</span>
           </a>
         </div>
         <p class="note" lang="en">Icon, full-size screenshots, key art and this text. Free to use in coverage of the game.</p>
-        <p class="note" lang="pl">Ikona, zrzuty ekranu w pełnej rozdzielczości, grafika i ten tekst. Można ich używać w materiałach o grze.</p>
+        
       </div>
     </div>
   </section>
@@ -494,13 +539,13 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px
 <footer>
   <div class="wrap">
     <div class="row">
-      <a href="privacy.html"><span lang="en">Privacy policy</span><span lang="pl">Polityka prywatności</span></a>
+      <a href="privacy.html"><span lang="en">Privacy policy</span></a>
       <a href="mailto:info.marlewgames@gmail.com">info.marlewgames@gmail.com</a>
-      <a href="#press"><span lang="en">Press kit</span><span lang="pl">Dla mediów</span></a>
+      <a href="#press"><span lang="en">Press kit</span></a>
     </div>
-    <p>© 2026 MarLew Games · Ironveil: Last Grid · 2026-11-07</p>
+    <p>© 2026 MarLew Games · Ironveil: Last Grid · 2026-11-08</p>
     <p lang="en">This page uses no cookies or trackers. Videos load only when you press play.</p>
-    <p lang="pl">Ta strona nie używa ciasteczek ani narzędzi śledzących. Filmy ładują się dopiero po naciśnięciu odtwarzania.</p>
+    
     <p class="sum">SHA-256 · ironveil-0.11.3-beta.apk: ed4e560fdd760b4d9e603e9f4a0e6ec87c7ae9e040011b4577223ddff38eb713<br>SHA-256 · ironveil-0.11.3-beta-windows.zip: 13c0726e0acdedcb4d8c245f124c928313aac394f34fd7178dcd52e147600400</p>
   </div>
 </footer>
@@ -509,31 +554,10 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px
 
 <script>
 (function () {
-  var root = document.documentElement;
-  function lang() { return root.dataset.lang; }
-  function set(l) {
-    root.dataset.lang = l;
-    root.lang = l;
-    document.querySelectorAll(".langs button").forEach(function (b) {
-      b.setAttribute("aria-pressed", String(b.dataset.set === l));
-    });
-    document.querySelectorAll("img[data-pl]").forEach(function (i) {
-      if (!i.dataset.en) i.dataset.en = i.alt;
-      i.alt = l === "pl" ? i.dataset.pl : i.dataset.en;
-    });
-    // A started video switches to the other language's track from the start.
-    document.querySelectorAll(".player video").forEach(function (v) {
-      var src = v.parentNode.dataset.video + "_" + l + ".mp4";
-      if (v.getAttribute("src") !== src) { v.pause(); v.setAttribute("src", src); }
-    });
-  }
-  var saved = null;
-  try { saved = localStorage.getItem("lang"); } catch (e) {}
-  set(saved || ((navigator.language || "").toLowerCase().indexOf("pl") === 0 ? "pl" : "en"));
-  document.querySelectorAll(".langs button").forEach(function (b) {
-    b.addEventListener("click", function () {
-      set(b.dataset.set);
-      try { localStorage.setItem("lang", b.dataset.set); } catch (e) {}
+  var lang = document.documentElement.lang;
+  document.querySelectorAll(".langs a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      try { localStorage.setItem("lang", a.dataset.set); } catch (e) {}
     });
   });
 
@@ -547,7 +571,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px
         v.controls = true;
         v.playsInline = true;
         v.preload = "auto";
-        v.setAttribute("src", p.dataset.video + "_" + lang() + ".mp4");
+        v.setAttribute("src", p.dataset.video + "_" + lang + ".mp4");
         p.insertBefore(v, p.firstChild);
       }
       p.classList.add("played");
