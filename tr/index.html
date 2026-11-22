@@ -70,6 +70,11 @@ nav.links a:hover { color: var(--text); }
 details.langs { position: relative; flex: none; margin: 0; padding: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; }
 details.langs summary { list-style: none; cursor: pointer; font-size: 14px; font-weight: 600; padding: 5px 14px; white-space: nowrap; }
 details.langs summary::-webkit-details-marker { display: none; }
+.top-right { display: flex; align-items: center; gap: 10px; flex: none; }
+.app-link { display: inline-flex; align-items: center; gap: 7px; background: #2563c9; color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 5px 14px; border-radius: 999px; border: 1px solid #3b78dd; white-space: nowrap; transition: background .15s; }
+.app-link:hover { background: #2d6fdb; color: #fff; }
+.app-link svg { width: 15px; height: 15px; flex: none; }
+@media (max-width: 480px) { .app-link { font-size: 13px; padding: 5px 10px; } .app-link svg { display: none; } .top-right { gap: 6px; } }
 .lang-list { position: absolute; right: 0; top: calc(100% + 6px); min-width: 150px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
 .lang-list a { display: block; color: var(--text); text-decoration: none; font-size: 15px; padding: 6px 10px; border-radius: 8px; }
 .lang-list a:hover { background: #1b272d; }
@@ -240,7 +245,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-bottom: 10px
       <a href="#beta">Beta</a>
       <a href="#press"><span lang="tr">Basın</span></a>
     </nav>
-    <details class="langs"><summary aria-label="Language">TR <span aria-hidden="true">▾</span></summary><div class="lang-list"><a href="../" hreflang="en" lang="en" data-set="en">English</a><a href="../pl/" hreflang="pl" lang="pl" data-set="pl">Polski</a><a href="../es/" hreflang="es" lang="es" data-set="es">Español</a><a href="../fr/" hreflang="fr" lang="fr" data-set="fr">Français</a><a href="../de/" hreflang="de" lang="de" data-set="de">Deutsch</a><a href="../it/" hreflang="it" lang="it" data-set="it">Italiano</a><a href="../pt/" hreflang="pt" lang="pt" data-set="pt">Português</a><a href="../ru/" hreflang="ru" lang="ru" data-set="ru">Русский</a><a href="./" hreflang="tr" lang="tr" data-set="tr" aria-current="page">Türkçe</a><a href="../uk/" hreflang="uk" lang="uk" data-set="uk">Українська</a></div></details>
+    <div class="top-right"><a class="app-link" href="/download/torrent-desk-0.1.0-setup.exe" download title="Torrent Desk for Windows · 6 MB"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Torrent Desk</a><details class="langs"><summary aria-label="Language">TR <span aria-hidden="true">▾</span></summary><div class="lang-list"><a href="../" hreflang="en" lang="en" data-set="en">English</a><a href="../pl/" hreflang="pl" lang="pl" data-set="pl">Polski</a><a href="../es/" hreflang="es" lang="es" data-set="es">Español</a><a href="../fr/" hreflang="fr" lang="fr" data-set="fr">Français</a><a href="../de/" hreflang="de" lang="de" data-set="de">Deutsch</a><a href="../it/" hreflang="it" lang="it" data-set="it">Italiano</a><a href="../pt/" hreflang="pt" lang="pt" data-set="pt">Português</a><a href="../ru/" hreflang="ru" lang="ru" data-set="ru">Русский</a><a href="./" hreflang="tr" lang="tr" data-set="tr" aria-current="page">Türkçe</a><a href="../uk/" hreflang="uk" lang="uk" data-set="uk">Українська</a></div></details></div>
   </div>
 </header>
 
